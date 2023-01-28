@@ -1,8 +1,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--main-color-title);
+  color: var(--main-color-text);
 }
-
 :root {
   --main-color-title: #ffffff;
   --secondary-color-title: #2e2f42;
@@ -36,7 +36,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: calc(24 / 18);
+  line-height: 1.33;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -70,13 +70,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color-text);
 }
+
+.contact:hover,
+.contact:focus {
+  color: var(--active-color);
+}
 /* --------------Hero------------ */
 .hero {
   background-color: var(--secondary-color-title);
 }
 .main-title {
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--main-color-title);
 }
@@ -96,6 +101,7 @@ body {
 .btn:focus,
 .btn.current {
   background-color: var(--active-color);
+  cursor: pointer;
 }
 
 /* --------------About us------------ */
@@ -111,7 +117,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--main-color-text);
 }
 
 /* --------------What are we doing------------ */
@@ -133,7 +138,7 @@ body {
 }
 .footer-text {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color-text);
 }
@@ -149,17 +154,18 @@ body {
 
 /* -------------- PORTFOLIO ------------ */
 .btns {
-font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.04em;
-color: #4D5AE5;
-background-color: var(--secondary-bgc:);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background-color: var(--secondary-bgc: );
 }
 
 .btns:hover,
 .btns:focus,
 .btns.current {
   background-color: var(--active-color);
+  cursor: pointer;
 }
