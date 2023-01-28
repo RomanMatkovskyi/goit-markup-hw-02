@@ -13,9 +13,11 @@ body {
   --secondary-bgc: #f4f4fd;
 }
 
-.list,
-.link {
+.list{
   list-style-type: none;
+} 
+
+.link {
   text-decoration: none;
 }
 .visually-hidden {
@@ -37,8 +39,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-color-title);
@@ -63,8 +63,6 @@ body {
 }
 
 .contact {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -80,6 +78,7 @@ body {
   background-color: var(--secondary-color-title);
 }
 .main-title {
+  text-align: center;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -88,11 +87,10 @@ body {
 
 .btn {
   font-family: inherit;
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--main-color-title);
   background: var(--btn-color);
@@ -101,12 +99,12 @@ body {
 .btn:focus,
 .btn.current {
   background-color: var(--active-color);
-  cursor: pointer;
 }
 
 /* --------------About us------------ */
 .subtitle {
   font-weight: 500;
+  text-align: center;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -115,6 +113,7 @@ body {
 
 .text {
   font-size: 16px;
+  text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -122,6 +121,7 @@ body {
 /* --------------What are we doing------------ */
 .secondary-title {
   font-size: 36px;
+  text-align: center;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--secondary-color-title);
@@ -130,6 +130,9 @@ body {
 /* --------------Team------------ */
 .team {
   background-color: var(--secondary-bgc);
+}
+.team-item {
+  background-color: var(--main-color-title);
 }
 
 /* --------------Footer------------ */
@@ -155,17 +158,18 @@ body {
 /* -------------- PORTFOLIO ------------ */
 .btns {
   font-family: inherit;
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #4d5ae5;
-  background-color: var(--secondary-bgc: );
+  background-color: var(--secondary-bgc);
 }
 
 .btns:hover,
 .btns:focus,
-.btns.current {
+.current {
   background-color: var(--active-color);
-  cursor: pointer;
+  color: var(--main-color-title);
 }
